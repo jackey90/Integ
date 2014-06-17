@@ -20,7 +20,7 @@
 	</properties>
 
 	<modules>
-		<module>../integ.dao</module>
+		<module>../integ.dal</module>
 		<module>../integ.service</module>
 	</modules>
 
