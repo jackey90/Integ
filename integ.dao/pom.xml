@@ -6,7 +6,7 @@
 		<groupId>com.ea.autoEx</groupId>
 		<artifactId>integ.all</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath></relativePath>
+		<relativePath>../integ.all/pom.xml</relativePath>
 	</parent>
 	<artifactId>integ.dao</artifactId>
 	<packaging>jar</packaging>
@@ -21,7 +21,7 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		
 	</dependencies>
 
 </project>
