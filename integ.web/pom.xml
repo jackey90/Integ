@@ -15,6 +15,12 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.ea.autoEx</groupId>
+			<artifactId>integ.dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
@@ -134,6 +140,23 @@
 		</dependency>
 		<!-- ========= -->
 
+		<!-- mybatis -->
+		<!-- ============== -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+		</dependency>
+		<!-- ============= -->
+
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
 
 	</dependencies>
 </project>

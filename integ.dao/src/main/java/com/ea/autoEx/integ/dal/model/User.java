@@ -73,7 +73,16 @@ public class User implements Serializable {
 	}
 
 	public void setValidate(boolean isValidate) {
-		this.isValidate = isValidate;
+		this.isValidate = isValidate; 
 	}
+
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", name=" + name + ", psw=" + psw
+				+ ", email=" + email + ", age=" + age + ", isValidate="
+				+ isValidate + "]";
+	}
+	
+	
 
 }
