@@ -7,8 +7,8 @@ public class User implements Serializable {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 267615962690396835L;
-	private Long userId;
+	private static final Long serialVersionUID = 267615962690396835L;
+	private int userId;
 	private String name;
 	private String psw;
 	private String email;
@@ -18,7 +18,7 @@ public class User implements Serializable {
 	public User() {
 	}
 
-	public User(Long userId, String name, String psw, String email, int age,
+	public User(int userId, String name, String psw, String email, int age,
 			boolean isValidate) {
 		this.userId = userId;
 		this.name = name;
@@ -28,11 +28,11 @@ public class User implements Serializable {
 		this.isValidate = isValidate;
 	}
 
-	public Long getUserId() {
+	public int getUserId() {
 		return userId;
 	}
 
-	public void setUserId(Long userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 

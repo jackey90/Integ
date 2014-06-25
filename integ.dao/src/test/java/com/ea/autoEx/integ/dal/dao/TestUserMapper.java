@@ -20,7 +20,15 @@ public class TestUserMapper extends
 
 	@Test
 	public void testUserMapper1() {
-		User user = userMapper.getUserById(1l);
+		User user = userMapper.getUserById(1);
 		System.out.println(user.toString());
+	}
+
+	@Test
+	public void testUserMapper2() {
+		List<User> users = userMapper.getAllUser();
+		for (User user : users) {
+			System.out.println(user.toString());
+		}
 	}
 }

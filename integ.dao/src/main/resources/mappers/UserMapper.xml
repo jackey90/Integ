@@ -1,36 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
-"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper  
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<sqlMap namespace="User">
+<mapper namespace="com.ea.autoEx.integ.dal.dao.UserMapper">
 
-	<typeAlias alias="User" type="com.ea.autoEx.integ.dal.model.User" />
 
 	<resultMap type="com.ea.autoEx.integ.dal.model.User" id="User">
-		<id property="userId" column="id" jdbcType="BIGINT" javaType="Long" />
+		<result property="userId" column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
 		<result property="name" column="name" jdbcType="VARCHAR"
-			javaType="String" />
+			javaType="java.lang.String" />
 		<result property="pwd" column="pwd" jdbcType="VARCHAR"
-			javaType="String" />
+			javaType="java.lang.String" />
 		<result property="email" column="email" jdbcType="VARCHAR"
-			javaType="String" />
-		<result property="age" column="age" jdbcType="INT" javaType="Integer" />
+			javaType="java.lang.String" />
+		<result property="age" column="age" jdbcType="INTEGER"
+			javaType="java.lang.Integer" />
 		<result property="isValidate" column="validate" jdbcType="TINYINT"
-			javaType="Boolean" />
+			javaType="java.lang.Boolean" />
 	</resultMap>
 
-	<select id="getUserById" parameterType="Long" resultType="User">
+	<select id="getUserById" parameterType="java.lang.Long" resultType="User">
 		SELECT
-		t.id,
-		t.name,
-		t.pws,
-		t.email,
-		t.age,
-		t.validate
+		*
 		FROM i_user as t
 		WHERE
 		t.id=#{userId}
 	</select>
+	
+	<select id="getAllUser"  resultType="User">
+		SELECT
+		*
+		FROM i_user
+	</select>
 
 
-</sqlMap>
+</mapper>
