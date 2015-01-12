@@ -1,4 +1,4 @@
-package com.ea.autoEx.integ.dal.model;
+package com.ea.autoEx.integ.dal.dbmodel;
 
 import java.util.ArrayList;
 import java.util.List;

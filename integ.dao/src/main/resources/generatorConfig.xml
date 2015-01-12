@@ -5,13 +5,13 @@
 
 <generatorConfiguration>
 	<classPathEntry
-		location="C:\Users\jinhuang\.m2\repository\mysql\mysql-connector-java\5.1.14\mysql-connector-java-5.1.14.jar" />
+		location="C:\Users\Jackey\.m2\repository\mysql\mysql-connector-java\5.1.14\mysql-connector-java-5.1.14.jar" />
 	<context id="mysqlTables" targetRuntime="MyBatis3">
 
 
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
 			connectionURL="jdbc:mysql://localhost:3306/integ?useUnicode=true&amp;characterEncoding=utf-8"
-			userId="root" password="#Bugsfor$">
+			userId="root" password="root">
 		</jdbcConnection>
 
 		<javaTypeResolver>

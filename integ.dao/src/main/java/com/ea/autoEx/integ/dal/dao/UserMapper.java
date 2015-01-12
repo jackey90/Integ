@@ -1,8 +1,10 @@
 package com.ea.autoEx.integ.dal.dao;
 
-import com.ea.autoEx.integ.dal.model.User;
-import com.ea.autoEx.integ.dal.model.UserExample;
+import com.ea.autoEx.integ.dal.dbmodel.User;
+import com.ea.autoEx.integ.dal.dbmodel.UserExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper {
